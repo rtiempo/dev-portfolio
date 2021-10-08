@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Hero, About, Skills, Projects, Contact } from './components';
+import { Navbar, Hero, About, Skills, Projects, Contact, Footer } from './components';
 import { Grid } from '@mui/material';
 import { Wrapper } from './App.styles'
 
@@ -16,8 +16,9 @@ function App() {
             <Projects />
             <Contact />
           </Wrapper>
+          <Footer />
         </Grid>
-      </Grid>
+      </Grid>      
     </>
   );
 }
