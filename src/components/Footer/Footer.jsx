@@ -16,11 +16,7 @@ const Footer = () => {
                     to='Top' 
                     smooth={true} 
                     duration={1000}>                
-                    <IconButton 
-                        sx={{ color: '#14919B' }} 
-                        to='Top' 
-                        smooth={true} 
-                        duration={1000}>
+                    <IconButton sx={{ color: '#14919B' }} >
                         <KeyboardArrowUpIcon />
                     </IconButton>
                 </Link>

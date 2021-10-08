@@ -1,7 +1,5 @@
 import React from 'react';
 import { Grid, Stack, Typography, Paper, Card, CardMedia, Button, Divider } from '@mui/material';
-import chatAppImg from '../../assets/imgs/chatapp_comp.jpg';
-import ecomImg from '../../assets/imgs/ecom_comp.jpg';
 import { ProjectsData } from '../../assets/data/data';
 
 const Projects = () => {

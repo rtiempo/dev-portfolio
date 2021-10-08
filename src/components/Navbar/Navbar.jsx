@@ -20,16 +20,16 @@ const Navbar = () => {
                     </IconButton>
                 </Burger>
                 <Menu isOpen={isOpen}>
-                    <MenuLink component={Link} to='About' smooth={true} duration={1000}>
+                    <MenuLink to='About' smooth={true} duration={1000}>
                         <Typography variant='subtitle1'>ABOUT</Typography>
                     </MenuLink>
-                    <MenuLink component={Link} to='Skills' smooth={true} duration={1000}>
+                    <MenuLink to='Skills' smooth={true} duration={1000}>
                         <Typography variant='subtitle1'>SKILLS</Typography>
                     </MenuLink>
-                    <MenuLink component={Link} to='Projects' smooth={true} duration={1000}>
+                    <MenuLink to='Projects' smooth={true} duration={1000}>
                         <Typography variant='subtitle1'>PROJECTS</Typography>
                     </MenuLink>
-                    <MenuLink component={Link} to='Contact' smooth={true} duration={1000}>
+                    <MenuLink to='Contact' smooth={true} duration={1000}>
                         <Typography variant='subtitle1'>CONTACT</Typography>
                     </MenuLink>                    
                     <Button 
@@ -46,7 +46,7 @@ const Navbar = () => {
         </>
     )
 }
-    
+
 const Nav = styled.nav`
     background: #ffffff;
     height: 64px;
@@ -78,7 +78,6 @@ const Menu = styled.div`
 `;
 
 const MenuLink =styled(Link)`
-    
     margin: 0.5rem 1rem;
     cursor: pointer;
     text-align: center;
@@ -101,7 +100,7 @@ const Burger = styled.div`
     }
 `;
 
-const Logo = styled(Link)` 
+const Logo = styled.div` 
     color: inherit;
     text-decoration: none;  
 `;

@@ -36,22 +36,22 @@ export const ProjectsData = [
         img: 'https://i.ibb.co/jyq7Jfd/chatapp-comp.jpg',
         stack: ['Dart', 'Flutter'],
         info: 'A messaging mobile app built using Flutter and Firebase.',
-        url: '',
-        repo: 'https://github.com/rtiempo/ChatApp-Tiempo'
+        url: '', // if url is empty then no button will appear
+        repo: 'https://github.com/rtiempo/ChatApp-Tiempo' // if repo is empty then no button will appear
     },
     {
         title: 'Ecom',
         img: 'https://i.ibb.co/Wzdnyww/ecom-comp.jpg',
         stack: ['Javascript', 'React', 'Material UI', 'Commerce.js', 'Stripe'],
         info: 'A basic Ecommerce webapp built using React.',
-        url: 'https://ecomtiempo.netlify.app/',
-        repo: 'https://github.com/rtiempo/ecom'
+        url: 'https://ecomtiempo.netlify.app/', // if url is empty then no button will appear
+        repo: 'https://github.com/rtiempo/ecom' // if repo is empty then no button will appear
     },
 ];
 
 export const ContactData = {
     email: 'jroberttiempo58@gmail.com',
     github: 'https://github.com/rtiempo',
-    linkedIn: 'https://www.linkedin.com/in/robert-tiempo/',
+    linkedIn: 'https://www.linkedin.com/in/robert-tiempo/', // if linkedIn is empty then no button will appear
     resume: 'https://drive.google.com/file/d/1ygikiatfsb9QK163mqN1eMtuhI6MQJlR/view?usp=sharing'
 };
