@@ -1,41 +1,58 @@
 import React from 'react';
-import { Stack, Typography, Grid, Divider, IconButton } from '@mui/material';
+import { Stack, Grid, IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { Link } from 'react-scroll';
+import { ContactData } from '../../assets/data/data';
 
 const Footer = () => {
     return (
         <>
-            <Stack spacing={8} direction='column' justifyContent='flex-end'>
+            <Stack spacing={8} direction='column' alignItems='center' justifyContent='flex-end'>            
+                <Link
+                    sx={{ color: '#14919B' }} 
+                    to='Top' 
+                    smooth={true} 
+                    duration={1000}>                
+                    <IconButton 
+                        sx={{ color: '#14919B' }} 
+                        to='Top' 
+                        smooth={true} 
+                        duration={1000}>
+                        <KeyboardArrowUpIcon />
+                    </IconButton>
+                </Link>
                 <Grid container direction='row' justifyContent='center' alignItems='center' sx={{ maxWidth: '100vh' }}>
                     <Grid item p={2}>
                         <IconButton 
                             sx={{ color: '#14919B' }} 
-                            href='https://mail.google.com/' 
-                            target='_blank' 
-                            rel='noreferrer noopener'>
+                            onClick={() => (
+                                window.open('mailto:'+ContactData.email+'?subject=Subject&body=Body%20goes%20here')
+                            )}>
                             <EmailIcon />
                         </IconButton>
                     </Grid>
                     <Grid item p={2}>
                         <IconButton 
                             sx={{ color: '#14919B' }} 
-                            href='https://github.com/rtiempo' 
+                            href={ContactData.github} 
                             target='_blank' 
                             rel='noreferrer noopener'>
                             <GitHubIcon />
                         </IconButton>
                     </Grid>
-                    <Grid item p={2}>
-                        <IconButton 
-                            sx={{ color: '#14919B' }} 
-                            href='https://www.linkedin.com/in/robert-tiempo/' 
-                            target='_blank' 
-                            rel='noreferrer noopener'>
-                            <LinkedInIcon />
-                        </IconButton>
-                    </Grid>
+                    { ContactData.linkedIn ?                     
+                        <Grid item p={2}>
+                            <IconButton 
+                                sx={{ color: '#14919B' }} 
+                                href={ContactData.linkedIn} 
+                                target='_blank' 
+                                rel='noreferrer noopener'>
+                                <LinkedInIcon />
+                            </IconButton>
+                        </Grid> : <></> }
                 </Grid>                    
             </Stack>   
         </>

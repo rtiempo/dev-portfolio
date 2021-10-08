@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Stack, Typography, Divider } from '@mui/material';
+import { AboutData } from '../../assets/data/data';
 
 const About = () => {
     return (
@@ -13,12 +14,7 @@ const About = () => {
                     </Grid>
                     <Grid item xs={12} md={12} p={2}>
                         <Typography align='center' variant='subtitle1' color='#102A43'>
-                            I'm a hard-working computer science student with a flair
-                            for creating effective and efficient solutions in the
-                            least amount of time. Has experience in web
-                            development both in front end and back end.
-                            Able to grasp new concepts quickly and
-                            efficiently. Successful working in both team and self-directed settings.
+                            {AboutData.body}
                         </Typography>
                     </Grid>
                 </Grid>                    

@@ -4,16 +4,15 @@ import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import MenuIcon from '@mui/icons-material/Menu';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
+import { ContactData } from '../../assets/data/data';
 
-const pdf = 'https://drive.google.com/file/d/1ygikiatfsb9QK163mqN1eMtuhI6MQJlR/view?usp=sharing';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>            
-            <Nav>
+            <Nav id='Top'>
                 <Logo></Logo>
                 <Burger>
                     <IconButton onClick={() => setIsOpen(!isOpen)}>
@@ -34,7 +33,7 @@ const Navbar = () => {
                         <Typography variant='subtitle1'>CONTACT</Typography>
                     </MenuLink>                    
                     <Button 
-                        href={pdf} 
+                        href={ContactData.resume} 
                         variant='outlined' 
                         startIcon={<InsertDriveFileIcon />} 
                         sx={{ m: 3 }} 

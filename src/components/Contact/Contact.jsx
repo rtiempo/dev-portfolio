@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stack, Typography, Button } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { ContactData } from '../../assets/data/data';
 
 const Contact = () => {
     return (
@@ -11,7 +12,8 @@ const Contact = () => {
                 <Button 
                     startIcon={<ArrowForwardIcon />} 
                     variant="text"
-                    onClick={() => (window.open('mailto:jroberttiempo58@gmail.com?subject=Subject&body=Body%20goes%20here')
+                    onClick={() => (
+                        window.open('mailto:'+ContactData.email+'?subject=Subject&body=Body%20goes%20here')
                     )}>
                     <Typography variant='h4' >Shoot me an email.</Typography>
                 </Button>
