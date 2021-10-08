@@ -6,7 +6,7 @@ import ecomImg from '../../assets/imgs/ecom_comp.jpg';
 const Projects = () => {
     return (
         <>
-            <Stack spacing={6} direction='column' justifyContent='center' mt={6} sx={{ minHeight: '100vh' }}>
+            <Stack id='Projects' spacing={6} direction='column' justifyContent='center' mt={6} sx={{ minHeight: '100vh' }}>
                 <Typography align='center' variant='h4' color='#14919B'>PROJECTS</Typography>                 
                 <Divider />                   
                 <Grid container direction='row' alignItems='flex-start' sx={{ maxWidth: '90vh' }}>

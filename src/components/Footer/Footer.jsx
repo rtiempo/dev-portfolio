@@ -13,8 +13,8 @@ const Footer = () => {
                         <IconButton 
                             sx={{ color: '#14919B' }} 
                             href='https://mail.google.com/' 
-                            target="_blank" 
-                            rel="noreferrer noopener">
+                            target='_blank' 
+                            rel='noreferrer noopener'>
                             <EmailIcon />
                         </IconButton>
                     </Grid>
@@ -22,8 +22,8 @@ const Footer = () => {
                         <IconButton 
                             sx={{ color: '#14919B' }} 
                             href='https://github.com/rtiempo' 
-                            target="_blank" 
-                            rel="noreferrer noopener">
+                            target='_blank' 
+                            rel='noreferrer noopener'>
                             <GitHubIcon />
                         </IconButton>
                     </Grid>
@@ -31,8 +31,8 @@ const Footer = () => {
                         <IconButton 
                             sx={{ color: '#14919B' }} 
                             href='https://www.linkedin.com/in/robert-tiempo/' 
-                            target="_blank" 
-                            rel="noreferrer noopener">
+                            target='_blank' 
+                            rel='noreferrer noopener'>
                             <LinkedInIcon />
                         </IconButton>
                     </Grid>

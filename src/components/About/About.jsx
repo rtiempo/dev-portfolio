@@ -4,7 +4,7 @@ import { Grid, Stack, Typography, Divider } from '@mui/material';
 const About = () => {
     return (
         <>
-            <Stack spacing={8} direction='column' justifyContent='center' sx={{ minHeight: '80vh' }}>
+            <Stack id='About' spacing={8} direction='column' justifyContent='center' sx={{ minHeight: '80vh' }}>
                 <Typography align='center' variant='h4' color='#14919B'>ABOUT</Typography>          
                 <Divider />              
                 <Grid container direction='row' alignItems='center' sx={{ maxWidth: '100vh' }}>

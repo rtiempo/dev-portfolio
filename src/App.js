@@ -18,7 +18,7 @@ function App() {
           </Wrapper>
           <Footer />
         </Grid>
-      </Grid>      
+      </Grid>   
     </>
   );
 }
