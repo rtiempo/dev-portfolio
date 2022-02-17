@@ -46,32 +46,35 @@ const Navbar = () => {
   return (
     <>
       <Nav scrollDown={scrollDown} isTop={isTop}>
-        <Logo></Logo>
+        <Logo />
+        <Typography variant='body' color='#102A43' sx={{ fontStyle: 'italic' }}>
+          a work in progress 👷‍♂️🛠
+        </Typography>
         <Burger>
           <IconButton onClick={() => setIsOpen(!isOpen)}>
             <MenuIcon />
           </IconButton>
         </Burger>
         <Menu isOpen={isOpen}>
-          <MenuLink to="About" smooth={true} duration={1000}>
-            <Typography variant="subtitle1">ABOUT</Typography>
+          <MenuLink to='About' smooth={true} duration={1000}>
+            <Typography variant='subtitle1'>ABOUT</Typography>
           </MenuLink>
-          <MenuLink to="Skills" smooth={true} duration={1000}>
-            <Typography variant="subtitle1">SKILLS</Typography>
+          <MenuLink to='Skills' smooth={true} duration={1000}>
+            <Typography variant='subtitle1'>SKILLS</Typography>
           </MenuLink>
-          <MenuLink to="Projects" smooth={true} duration={1000}>
-            <Typography variant="subtitle1">PROJECTS</Typography>
+          <MenuLink to='Projects' smooth={true} duration={1000}>
+            <Typography variant='subtitle1'>PROJECTS</Typography>
           </MenuLink>
-          <MenuLink to="Contact" smooth={true} duration={1000}>
-            <Typography variant="subtitle1">CONTACT</Typography>
+          <MenuLink to='Contact' smooth={true} duration={1000}>
+            <Typography variant='subtitle1'>CONTACT</Typography>
           </MenuLink>
           <Button
             href={ContactData.resume}
-            variant="outlined"
+            variant='outlined'
             startIcon={<InsertDriveFileIcon />}
             sx={{ m: 3 }}
-            target="_blank"
-            rel="noreferrer noopener"
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Resume
           </Button>
