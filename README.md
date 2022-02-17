@@ -2,6 +2,8 @@
 
 Hello! Welcome to my developer portfolio.
 
+It's still a work in progress.
+
 ## See it in action
 
 <p align='center'>
