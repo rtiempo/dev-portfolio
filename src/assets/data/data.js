@@ -45,5 +45,5 @@ export const ContactData = {
   github: 'https://github.com/rtiempo',
   linkedIn: 'https://www.linkedin.com/in/robert-tiempo/', // if linkedIn is empty then no button will appear
   resume:
-    'https://drive.google.com/file/d/1ygikiatfsb9QK163mqN1eMtuhI6MQJlR/view?usp=sharing',
+    'https://drive.google.com/file/d/1HEehC4z_WCmzz-xhTxIhCtQXatTZWkjN/view?usp=sharing',
 };
