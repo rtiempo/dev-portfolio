@@ -4,7 +4,7 @@ export const HeroData = {
 };
 
 export const AboutData = {
-  body: "I'm a hard-working computer science student with a flair for creating effective and efficient solutions in the least amount of time. Has experience in web development both in front end and back end. Able to grasp new concepts quickly and efficiently. Successful working in both team and self-directed settings.",
+  body: "I'm a Full Stack Developer with a flair for creating effective and efficient solutions in the least amount of time. Has experience in web development both in front end and back end. Able to grasp new concepts quickly and efficiently. Successful working in both team and self-directed settings.",
 };
 
 export const SkillsData = {
