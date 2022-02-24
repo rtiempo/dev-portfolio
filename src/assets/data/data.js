@@ -8,7 +8,7 @@ export const AboutData = {
 };
 
 export const SkillsData = {
-  languages: ['Javascript', 'Typescript', 'HTML', 'CSS', 'SQL', 'Dart'],
+  languages: ['Javascript', 'Typescript', 'HTML', 'CSS', 'SQL'],
   libraries: [
     'React',
     'Node.js',
@@ -16,7 +16,6 @@ export const SkillsData = {
     'Nest.js',
     'Material UI',
     'Styled Components',
-    'Flutter',
   ],
   tools: ['MongoDB', 'Git', 'Firebase', 'Figma'],
 };
